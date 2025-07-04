@@ -40,7 +40,7 @@ for (let i = 0; i < 8; i++) {
     group.add(card);
 }
 
-camera.position.set(0, 0.5, 4);
+camera.position.set(0, 0.5, 3);
 camera.lookAt(0, 0, 0);
 
 window.addEventListener('click', function(event) {
