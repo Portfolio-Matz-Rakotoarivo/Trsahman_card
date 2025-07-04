@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Card Carousel</title>
+  <style>
+    html, body {
+      margin: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+    canvas {
+      display: block;
+    }
+    #corner-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  height: auto;
+  z-index: 10;
+}
+  </style>
+</head>
+<body>
+  <img src="logo.png" id="corner-logo" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
