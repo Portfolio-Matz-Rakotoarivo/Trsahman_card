@@ -76,7 +76,7 @@ function animate() {
         let target = card.userData.isFlipped ? Math.PI : 0;
         let delta = target - card.userData.currentFlip;
         if (Math.abs(delta) > 0.01) {
-            card.userData.currentFlip += delta * 0.15;
+            card.userData.currentFlip += delta * 0.08;
         } else {
             card.userData.currentFlip = target;
         }
