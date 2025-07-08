@@ -17,8 +17,8 @@ scene.add(group);
 let radius = 2.5;
 let cardGeometry = new THREE.BoxGeometry(1, 1.4, 0.01);
 
-for (let i = 0; i < 8; i++) {
-    let angle = (i / 8) * Math.PI * 2;
+for (let i = 0; i < 14; i++) {
+    let angle = (i / 14) * Math.PI * 2;
     let front = new THREE.TextureLoader().load(`card${i + 1}_front.png`);
     let back = new THREE.TextureLoader().load(`card${i + 1}_back.png`);
     let sideMat = new THREE.MeshBasicMaterial({ color: 0x888888 });
