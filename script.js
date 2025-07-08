@@ -14,7 +14,7 @@ let mouse = new THREE.Vector2();
 let group = new THREE.Group();
 scene.add(group);
 
-let radius = 2.5;
+let radius = 3.2;
 let cardGeometry = new THREE.BoxGeometry(1, 1.4, 0.01);
 
 for (let i = 0; i < 14; i++) {
