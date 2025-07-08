@@ -70,7 +70,7 @@ window.addEventListener('mousemove', e => {
 
 function animate() {
     requestAnimationFrame(animate);
-    if (!isDragging) group.rotation.y += 0.002;
+    if (!isDragging) group.rotation.y += 0.001;
 
     group.children.forEach(card => {
         let target = card.userData.isFlipped ? Math.PI : 0;
