@@ -68,6 +68,25 @@ window.addEventListener('mousemove', e => {
     }
 });
 
+window.addEventListener('touchstart', e => {
+    if (e.touches.length === 1) {
+        isDragging = true;
+        previousMouseX = e.touches[0].clientX;
+    }
+});
+
+window.addEventListener('touchend', () => {
+    isDragging = false;
+});
+
+window.addEventListener('touchmove', e => {
+    if (isDragging && e.touches.length === 1) {
+        let delta = (e.touches[0].clientX - previousMouseX) * 0.005;
+        group.rotation.y += delta;
+        previousMouseX = e.touches[0].clientX;
+    }
+});
+
 function animate() {
     requestAnimationFrame(animate);
     if (!isDragging) group.rotation.y += 0.001;
